@@ -25,11 +25,44 @@
 
   &__button {
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
     color: #c2ff01;
     background: linear-gradient(360deg, #1d737e -74.42%, #4fb9c7 154.17%);
     border-radius: 57px;
     padding: 15px 30px;
     text-transform: uppercase;
     margin-right: 2rem;
+  }
+}
+
+.introduction {
+  padding-top: 12%;
+  padding-left: 20%;
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    span {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      background-color: #000;
+      color: #c2ff01;
+      font-size: 30px;
+
+      border-radius: 8px;
+      padding: 0.1rem 1rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+
+    margin: 15px 0;
   }
 }
