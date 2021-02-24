@@ -29,12 +29,7 @@ function compJs() {
 }
 
 function compImg() {
-  return (
-    gulp
-      .src(paths.dev.img)
-      // .pipe(imagemin())
-      .pipe(gulp.dest(paths.dist.img))
-  );
+  return gulp.src(paths.dev.img).pipe(gulp.dest(paths.dist.img));
 }
 
 function watchFiles() {

@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+
+  &__logo {
+    margin-left: 4rem;
+  }
+
+  &__background-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__div-helper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #c2ff01;
+    background: linear-gradient(360deg, #1d737e -74.42%, #4fb9c7 154.17%);
+    border-radius: 57px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    margin-right: 2rem;
+  }
+}
