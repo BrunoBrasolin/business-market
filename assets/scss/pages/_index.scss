@@ -290,6 +290,46 @@
   }
 }
 
+.video {
+  background-color: #000;
+  position: relative;
+
+  padding: 80px 17%;
+
+  h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+
+    margin-bottom: 80px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 650px;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__background {
+    background: linear-gradient(180deg, #171717 41.46%, rgba(23, 23, 23, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .footer {
   background-color: #000;
   display: flex;
