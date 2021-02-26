@@ -326,10 +326,43 @@
 
   &__vote {
     display: flex;
+    justify-content: center;
   }
 
   &__vote aside {
-    width: 50%;
+    width: 25%;
+    display: flex;
+    padding: 30px 40px;
+    border-radius: 10px;
+    margin: 100px 1rem 0;
+    position: relative;
+
+    p {
+      margin: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: -60px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  &__like {
+    background-color: #c2ff01;
+    color: #000;
+
+    &::after {
+      content: url("../img/like.svg");
+    }
+  }
+
+  &__deslike {
+    background-color: #d50033;
+
+    &::after {
+      content: url("../img/deslike.svg");
+    }
   }
 }
 
