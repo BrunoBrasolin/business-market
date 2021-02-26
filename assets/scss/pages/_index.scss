@@ -39,12 +39,21 @@
   }
 }
 
+.first-fold-background {
+  background: linear-gradient(198deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 64.63%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .introduction {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12% 15% 0;
-  background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 64.63%);
+  padding: 5% 17%;
 
   &__informations {
     flex-shrink: 0;
@@ -103,20 +112,49 @@
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 43%);
+  grid-template-columns: repeat(2, auto);
+  padding-left: 17%;
   align-items: center;
-  justify-content: space-evenly;
+  position: relative;
 
-  img {
-    justify-self: flex-end;
+  &::before {
+    content: "Sobre";
+    text-transform: uppercase;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #f7f7f9;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    font-size: 63px;
+    left: 5%;
   }
 
-  aside {
+  &__img-container {
+    position: relative;
+
+    &::before {
+      content: "";
+      background: #c2ff01;
+      height: 250px;
+      width: 250px;
+      position: absolute;
+      z-index: -1;
+      left: calc(-250px / 2);
+      top: calc(200px / 10);
+      transform: rotate(45deg);
+      border-radius: 16px;
+    }
+  }
+
+  &__informations {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 75%;
+    width: 50%;
     height: 100%;
+    margin-left: 5%;
 
     h2 {
       font-family: "Oswald", sans-serif;
