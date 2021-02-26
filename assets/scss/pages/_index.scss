@@ -128,7 +128,7 @@
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 900;
     font-size: 63px;
-    left: 5%;
+    left: calc(17% / 4);
   }
 
   &__img-container {
@@ -201,4 +201,32 @@
 .banner {
   background-image: url("../img/background-banner.png");
   width: 100%;
+
+  display: flex;
+
+  h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    line-height: 40px;
+
+    align-self: center;
+  }
+
+  p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+
+    width: 50%;
+
+    strong {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #c2ff01;
+    }
+  }
 }
