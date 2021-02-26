@@ -33,60 +33,71 @@
     text-transform: uppercase;
     margin-right: 2rem;
   }
+
+  &__menu {
+    cursor: pointer;
+  }
 }
 
 .introduction {
-  padding-top: 12%;
-  padding-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12% 15% 0;
+  background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 64.63%);
 
-  h1 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 47px;
-    letter-spacing: 0.1em;
+  &__informations {
+    flex-shrink: 0;
 
-    text-transform: uppercase;
-
-    strong {
-      font-family: "Fira Sans", sans-serif;
+    h1 {
+      font-family: "Oswald", sans-serif;
       font-weight: 700;
-      background-color: #000;
-      color: #c2ff01;
       font-size: 30px;
+      line-height: 47px;
+      letter-spacing: 0.1em;
 
-      border-radius: 8px;
-      padding: 0.1rem 1rem;
+      text-transform: uppercase;
+
+      strong {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 700;
+        background-color: #000;
+        color: #c2ff01;
+        font-size: 30px;
+
+        border-radius: 8px;
+        padding: 0.1rem 1rem;
+      }
     }
-  }
 
-  h2 {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 27px;
+    h2 {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
 
-    margin-top: 15px;
-    margin-bottom: 30px;
-  }
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
 
-  a {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.1em;
+    a {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.1em;
 
-    text-transform: uppercase;
-    text-align: center;
+      text-transform: uppercase;
+      text-align: center;
 
-    background-color: #c2ff01;
-    color: black;
-    border-radius: 30px;
+      background-color: #c2ff01;
+      color: black;
+      border-radius: 30px;
 
-    padding: 15px 0;
-    margin-right: 15px;
-    display: block;
-    width: 35%;
+      padding: 15px 0;
+      margin-right: 15px;
+      display: block;
+      width: 90%;
+    }
   }
 }
 
