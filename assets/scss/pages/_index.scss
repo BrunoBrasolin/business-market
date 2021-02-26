@@ -136,15 +136,15 @@
 
     &::before {
       content: "";
-      background: #c2ff01;
+      background-color: #c2ff01;
       height: 250px;
       width: 250px;
       position: absolute;
       z-index: -1;
       left: calc(-250px / 2);
       top: calc(200px / 10);
+      border-radius: 24px;
       transform: rotate(45deg);
-      border-radius: 16px;
     }
   }
 
@@ -200,9 +200,27 @@
 
 .banner {
   background-image: url("../img/background-banner.png");
+  background-size: cover;
+  position: relative;
   width: 100%;
+  margin-top: 5%;
 
   display: flex;
+
+  padding: 80px calc(17% / 2);
+
+  &::after {
+    content: "";
+    background-color: #c2ff01;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    right: calc(100px / 2);
+    top: calc(-100px / 2);
+    transform: rotate(45deg);
+    border-radius: 24px;
+  }
 
   h2 {
     font-family: "Oswald", sans-serif;
@@ -210,6 +228,8 @@
     color: #fff;
     font-size: 25px;
     line-height: 40px;
+
+    margin: 0 10% 0 5%;
 
     align-self: center;
   }
@@ -219,6 +239,7 @@
     font-weight: 600;
     font-size: 15px;
     color: #fff;
+    line-height: 27px;
 
     width: 50%;
 
