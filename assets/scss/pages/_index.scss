@@ -289,3 +289,52 @@
     width: 20%;
   }
 }
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 17%;
+  align-items: center;
+
+  p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+
+    small {
+      font-family: "Fira Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 21px;
+      color: #4b4b4b;
+    }
+  }
+
+  &__designed {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    small {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 19px;
+      margin: 0.5rem;
+    }
+
+    img {
+      height: 20px;
+      width: auto;
+    }
+  }
+}
