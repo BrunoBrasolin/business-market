@@ -295,6 +295,30 @@
   color: #fff;
   padding: 120px 0;
   text-align: center;
+  position: relative;
+
+  &__icon-container::after {
+    content: "";
+    background-color: #c2ff01;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: 0;
+    right: calc(50% - 75px);
+    top: calc(-150px / 2);
+    transform: rotate(45deg);
+    border-radius: 24px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    z-index: 1;
+
+    height: 100px;
+    width: 100px;
+  }
 
   h2 {
     font-family: "Oswald", sans-serif;
@@ -303,6 +327,7 @@
     line-height: 39px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    z-index: 1;
   }
 
   p {
