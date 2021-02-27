@@ -335,6 +335,21 @@
   }
 }
 
+.icons {
+  padding: 80px 17%;
+
+  .business-icon-container {
+    position: relative;
+
+    &::after {
+      left: -25px;
+      z-index: -1;
+      top: -25px;
+      z-index: -1;
+    }
+  }
+}
+
 .votes {
   background-color: #000;
   color: #fff;
@@ -342,27 +357,19 @@
   text-align: center;
   position: relative;
 
-  &__icon-container::after {
-    content: "";
-    background-color: #c2ff01;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    z-index: 0;
-    right: calc(50% - 75px);
-    top: calc(-150px / 2);
-    transform: rotate(45deg);
-    border-radius: 24px;
-  }
+  .business-icon-container {
+    img {
+      position: absolute;
+      top: -50px;
+      left: calc(50% - 50px);
+      z-index: 2;
+    }
 
-  &__icon {
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-    z-index: 1;
-
-    height: 100px;
-    width: 100px;
+    &::after {
+      right: calc(50% - 75px);
+      top: calc(-150px / 2);
+      z-index: 1;
+    }
   }
 
   h2 {

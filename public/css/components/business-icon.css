@@ -1,0 +1,1 @@
+.business-icon-container img{height:100px;width:100px}.business-icon-container::after{content:"";background-color:#c2ff01;height:150px;width:150px;position:absolute;transform:rotate(45deg);border-radius:24px}
