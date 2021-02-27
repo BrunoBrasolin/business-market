@@ -290,6 +290,51 @@
   }
 }
 
+.choices {
+  display: flex;
+  background-color: red;
+
+  aside {
+    width: 50%;
+
+    h2 {
+      font-family: "Oswald", sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 39px;
+
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+  }
+
+  &__type {
+    padding: 80px 5% 120px 17%;
+    background: linear-gradient(59.46deg, #1d737e -67.96%, #4fb9c7 103.75%);
+
+    p {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      margin: 30px 0;
+
+      color: #fff;
+
+      strong {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 27px;
+
+        color: #c2ff01;
+      }
+    }
+  }
+}
+
 .votes {
   background-color: #000;
   color: #fff;
