@@ -347,6 +347,10 @@ footer {
     &::before {
       display: none;
     }
+
+    &__row-social {
+      justify-content: center;
+    }
   }
 }
 
