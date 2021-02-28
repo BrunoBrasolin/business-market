@@ -106,13 +106,29 @@
       text-align: center;
 
       background-color: #c2ff01;
-      color: black;
+      color: #000;
       border-radius: 30px;
 
       padding: 15px 0;
       margin-right: 15px;
       display: block;
       width: 90%;
+      transition: color 0.2s, background-color 0.2s;
+
+      &:hover {
+        background-color: #000;
+        color: #c2ff01;
+      }
+    }
+  }
+
+  img {
+    transition: transform 0.5s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
     }
   }
 }
@@ -562,6 +578,7 @@
           text-transform: uppercase;
           position: relative;
           margin-bottom: 2rem;
+          cursor: default;
 
           &::after {
             content: "";
