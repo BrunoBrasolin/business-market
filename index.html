@@ -9,8 +9,10 @@
   </head>
   <body>
     <header class="header">
-      <img src="public/img/background-logo.png" alt="Fundo Logo" class="header__background-logo" />
-      <img src="public/img/logo.png" alt="Business Market" title="Business Market" class="header__logo" />
+      <div class="header__logo">
+        <!-- <img src="public/img/background-logo.png" alt="Fundo Logo" class="header__background-logo" /> -->
+        <img src="public/img/logo.png" alt="Business Market" title="Business Market" />
+      </div>
       <div class="header__div-helper">
         <a href="#" title="Mais informações" class="header__button">Mais informações</a>
         <img src="public/img/menu.png" alt="Menu" title="Menu" class="header__menu" />
@@ -107,32 +109,63 @@
         </aside>
       </section>
 
+      <section class="containing">
+        <aside class="containing__icon-title">
+          <div class="business-icon-container">
+            <img src="public/img/business-icon.svg" alt="Business Icon" />
+          </div>
+
+          <h2>
+            containing Lorem<br />
+            Ipsum passages
+          </h2>
+        </aside>
+
+        <aside>
+          <p>
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumLetraset sheets containing Lorem
+            Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          </p>
+        </aside>
+      </section>
+
       <section class="icons">
-        <div class="business-icon-container">
-          <img src="public/img/business-icon.svg" alt="Business Icon" />
-        </div>
-        <h2>containing Lorem Ipsum passages</h2>
-        <p>
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumLetraset sheets containing Lorem
-          Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-        </p>
-      </section>
-
-      <section>
         <h2>A like Aldus PageMaker including</h2>
-        <div><img src="public/img/palestras.svg" alt="Palestras" /><span>Palestras</span></div>
-        <div><img src="public/img/workshop.svg" alt="Treinamentos e Workshops" /><span>Treinamentos e Workshops</span></div>
-        <div><img src="public/img/formacao.svg" alt="Programas de Formação" /><span>Programas de Formação</span></div>
-        <div><img src="public/img/consultoria.svg" alt="Consultoria de Gestão" /><span>Consultoria de Gestão</span></div>
-        <div><img src="public/img/mentoria.svg" alt="Atendimento Individual" /><span>Atendimento Individual</span> <small>(mentoring)</small></div>
+
+        <div class="icons__row">
+          <div>
+            <img src="public/img/palestras.svg" alt="Palestras" />
+            <span>Palestras</span>
+          </div>
+
+          <div>
+            <img src="public/img/workshop.svg" alt="Treinamentos e Workshops" />
+            <span>Treinamentos e Workshops</span>
+          </div>
+
+          <div>
+            <img src="public/img/formacao.svg" alt="Programas de Formação" />
+            <span>Programas de Formação</span>
+          </div>
+
+          <div>
+            <img src="public/img/consultoria.svg" alt="Consultoria de Gestão" />
+            <span>Consultoria de Gestão</span>
+          </div>
+
+          <div>
+            <img src="public/img/mentoria.svg" alt="Atendimento Individual" />
+            <span>Atendimento Individual<small>(mentoring)</small></span>
+          </div>
+        </div>
       </section>
 
-      <section class="call">
+      <section class="version-banner">
         <aside>
           <h2>Versions of Lorem IpsumLetraset sheets <strong>publishing software like ?</strong></h2>
           <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumLetraset</p>
         </aside>
-        <aside><a href="#" title="containing Lorem Ipsum passages">containing Lorem Ipsum passages </a></aside>
+        <aside><a href="#" title="containing Lorem Ipsum passages">containing Lorem Ipsum passages</a></aside>
       </section>
 
       <section class="subscription">
@@ -146,7 +179,7 @@
           <li><span>.6</span>Sed ut perspiciatis unde omnis iste natus error</li>
           <li><span>.7</span>mistaken idea of denouncing</li>
           <li>
-            <span>Inscreva-se</span>
+            <a href="" title="Inscreva-se">Inscreva-se</a>
           </li>
         </ol>
       </section>
