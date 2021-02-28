@@ -84,6 +84,22 @@
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+
+    &__logo::after {
+      height: 200px;
+      width: 200px;
+
+      top: 0;
+      left: calc(50% - 100px);
+    }
+
+    &__div-helper {
+      display: none;
+    }
+  }
 }
 
 .first-fold-background {
