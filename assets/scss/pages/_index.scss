@@ -1,3 +1,13 @@
+section,
+footer {
+  padding: $desktop-padding-y $desktop-padding-x;
+
+  @media screen and (max-width: 600px) {
+    padding-left: $mobile-padding-x;
+    padding-right: $mobile-padding-x;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -116,7 +126,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5% 17% 0;
 
   &__informations {
     flex-shrink: 0;
@@ -201,12 +210,24 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    &__informations {
+      width: 100%;
+
+      h1,
+      h1 strong {
+        font-size: 20px;
+        line-height: 37px;
+      }
+    }
+  }
 }
 
 .about {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  padding: 80px 17%;
+
   align-items: center;
   position: relative;
 
@@ -226,6 +247,8 @@
 
   &__img-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     &::before {
       content: "";
@@ -288,6 +311,24 @@
       color: black;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__img-container {
+      margin-bottom: 1rem;
+
+      &::before {
+        height: 0;
+        width: 0;
+      }
+    }
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .banner {
@@ -295,12 +336,9 @@
   background-size: cover;
   position: relative;
   width: 100%;
-  margin-top: 5%;
 
   display: flex;
   justify-content: space-between;
-
-  padding: 80px 17%;
 
   img {
     position: absolute;
@@ -349,13 +387,26 @@
       color: #c2ff01;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .jumbotron {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 17%;
 
   p {
     font-family: "Fira Sans", sans-serif;
@@ -383,11 +434,26 @@
     text-align: right;
     width: 25%;
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+
+    h2 {
+      width: 100%;
+      text-align: start;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
 }
 
 .choices {
   display: flex;
-  background-color: red;
+  padding-left: 0;
+  padding-right: 0;
 
   aside {
     width: 50%;
@@ -428,10 +494,17 @@
       }
     }
   }
+
+  @media screen and (max-width: 1050px) {
+    flex-direction: column;
+
+    aside {
+      width: 100%;
+    }
+  }
 }
 
 .containing {
-  padding: 80px 17%;
   display: flex;
   align-items: center;
 
@@ -487,11 +560,19 @@
       margin-bottom: 5rem;
     }
   }
+  @media screen and (max-width: 1050px) {
+    &__icon-title {
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        margin-top: 3rem;
+      }
+    }
+  }
 }
 
 .icons {
-  padding: 80px 17%;
-
   h2 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
@@ -504,14 +585,16 @@
 
   &__row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
+    flex-wrap: wrap;
 
     div {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
+      position: relative;
 
       span {
         font-family: "Fira Sans", sans-serif;
@@ -559,10 +642,10 @@
   position: relative;
   width: 100%;
   margin-top: 5%;
-  padding: 80px 17%;
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   aside {
     width: 50%;
@@ -597,7 +680,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    margin-top: 3rem;
+    margin: 3rem 0;
 
     color: #ffffff;
   }
@@ -622,11 +705,15 @@
       color: #c2ff01;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    aside {
+      width: 100%;
+    }
+  }
 }
 
 .subscription {
-  padding: 80px 17%;
-
   h2 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
@@ -642,7 +729,6 @@
   ol {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    align-items: center;
     row-gap: 5rem;
 
     li {
@@ -732,6 +818,18 @@
             color: #c2ff01;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    ol {
+      grid-template-columns: auto;
+    }
+
+    li {
+      &:last-child {
+        padding: 30px;
       }
     }
   }
@@ -839,14 +937,21 @@
     &__vote aside {
       width: 50%;
     }
+
+    @media screen and (max-width: 600px) {
+      &__vote {
+        flex-wrap: wrap;
+      }
+      &__vote aside {
+        width: 80%;
+      }
+    }
   }
 }
 
 .video {
   background-color: #000;
   position: relative;
-
-  padding: 80px 17%;
 
   h2 {
     font-family: "Oswald", sans-serif;
@@ -880,13 +985,19 @@
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      width: 100%;
+    }
+  }
 }
 
 .footer {
   background-color: #000;
   display: flex;
   justify-content: space-between;
-  padding: 80px 17%;
+
   align-items: center;
 
   p {
@@ -927,6 +1038,14 @@
     img {
       height: 20px;
       width: auto;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+
+    > * {
+      margin-top: 2rem;
     }
   }
 }
