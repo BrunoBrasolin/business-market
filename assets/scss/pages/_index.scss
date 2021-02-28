@@ -171,6 +171,20 @@
       transform: scale(1.025);
     }
   }
+
+  @media screen and (max-width: 1050px) {
+    justify-content: center;
+
+    &__informations {
+      a {
+        margin: 0 auto;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .about {
@@ -443,6 +457,18 @@
       top: -25px;
       height: 135px;
       width: 135px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    flex-direction: column;
+
+    aside {
+      width: 100%;
+    }
+
+    &__icon-title {
+      margin-bottom: 5rem;
     }
   }
 }
@@ -790,6 +816,12 @@
 
     &::after {
       content: url("../img/deslike.svg");
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    &__vote aside {
+      width: 50%;
     }
   }
 }
